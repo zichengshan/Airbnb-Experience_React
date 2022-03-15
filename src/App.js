@@ -7,6 +7,7 @@ import dataSets from "./data"
 function App() {
     const cards = dataSets.map((dataSet) => {
         return <Card
+            key = {dataSet.id}
             img= {dataSet.coverImg}
             rating={dataSet.stats.rating}
             reveiveCount={dataSet.stats.reviewCount}
@@ -19,7 +20,9 @@ function App() {
     <div className="App">
         <Navbar />
         <Hero/>
-        {cards}
+        <section className="cards-list">
+            {cards}
+        </section>
     </div>
   );
 }
