@@ -5,6 +5,15 @@
 ## Demo
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/61951792/158465366-830f417f-0a60-49ac-8b76-cfa71f5aadd3.gif)
 
+## Highlights
+1. React Framework
+2. JSX
+3. Create components from an array
+4. Mapping data
+5. Resuable components
+6. Custom components
+7. Styling
+
 ## Q&A
 1. What do props help us accomplish?
 
