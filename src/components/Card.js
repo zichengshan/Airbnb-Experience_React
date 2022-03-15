@@ -1,19 +1,21 @@
 import React from "react";
-import katie from "../images/katie-zaferes.png"
+// import katie from "../images/katie-zaferes.png"
 import star from "../images/star.png"
 
-export default function Card(){
+// Reusable component
+export default function Card(props){
+    const image = props.img;
     return(
         <div className="card">
-            <img className="card--image"  src = {katie} alt = "katie"/>
+            <img className="card--image"  src ={require(`../images/${props.img}`)} alt = "katie"/>
             <div className="card--stats">
                 <img className="card--star" src = {star} alt = "star" />
-                <span>5.0</span>
-                <span className="gray">(6) • </span>
-                <span className="gray">USA</span>
+                <span>{props.rating}</span>
+                <span className="gray">({props.reveiveCount}) • </span>
+                <span className="gray">{props.country}</span>
             </div>
-            <p>Life Lessons with Katie Zaferes</p>
-            <p><span className="bold">From $136</span> / person</p>
+            <p>{props.title}</p>
+            <p><span className="bold">From ${props.price}</span> / person</p>
         </div>
     )
 }
