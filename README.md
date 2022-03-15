@@ -1,4 +1,6 @@
 # Airbnb-Experience
+1. Use data to create a web page (Data-driven React)
+2. Reproduce the Airbnb experiences page with React
 
 ## Demo
 
