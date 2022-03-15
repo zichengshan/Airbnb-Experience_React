@@ -3,6 +3,7 @@
 2. Reproduce the Airbnb experiences page with React
 
 ## Demo
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/61951792/158465366-830f417f-0a60-49ac-8b76-cfa71f5aadd3.gif)
 
 ## Q&A
 1. What do props help us accomplish?
