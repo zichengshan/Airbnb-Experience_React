@@ -7,26 +7,20 @@ import dataSets from "./data"
 function App() {
     const cards = dataSets.map((dataSet) => {
         return <Card
-            key = {dataSet.id}
-            item = {dataSet}
-            // img= {dataSet.coverImg}
-            // rating={dataSet.stats.rating}
-            // reveiveCount={dataSet.stats.reviewCount}
-            // country={dataSet.location}
-            // title={dataSet.title}
-            // price={dataSet.price}
-            // openSpots = {dataSet.openSpots}
-            />
+            key={dataSet.id}
+            // Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_object_literals
+            {...dataSet}
+        />
     })
-  return (
-    <div className="App">
-        <Navbar />
-        <Hero/>
-        <section className="cards-list">
-            {cards}
-        </section>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Navbar/>
+            <Hero/>
+            <section className="cards-list">
+                {cards}
+            </section>
+        </div>
+    );
 }
 
 export default App;
