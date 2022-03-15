@@ -14,6 +14,7 @@ function App() {
             country={dataSet.location}
             title={dataSet.title}
             price={dataSet.price}
+            openSpots = {dataSet.openSpots}
             />
     })
   return (
