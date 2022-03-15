@@ -2,20 +2,24 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Card from "./components/Card"
+import dataSets from "./data"
 
 function App() {
+    const cards = dataSets.map((dataSet) => {
+        return <Card
+            img= {dataSet.coverImg}
+            rating={dataSet.stats.rating}
+            reveiveCount={dataSet.stats.reviewCount}
+            country={dataSet.location}
+            title={dataSet.title}
+            price={dataSet.price}
+            />
+    })
   return (
     <div className="App">
         <Navbar />
         <Hero/>
-        <Card
-            img = "katie-zaferes.png"
-            rating = {5.0}
-            reveiveCount = {6}
-            country = "USA"
-            title = "Life Lessons with Katie Zaferes"
-            price = {135}
-        />
+        {cards}
     </div>
   );
 }
